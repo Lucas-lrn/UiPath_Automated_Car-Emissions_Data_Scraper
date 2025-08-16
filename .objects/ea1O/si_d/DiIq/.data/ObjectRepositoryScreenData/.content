@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="lCUBYROc8k6EUFDbsqlQjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFvSURBVDhPlZKvb4NQEMebpYqgCIpULUj+gqZ/QmUlakEtyEokmVqqyOQUqWqmlipS9SSZQjZVL6jlKfIU4Za7x48+GEsmLsC7+37ue/dY1E0Nf8XpzGD5sIOlFdDTf0q0/GIs6KJqalgakRIaIT1NK6J309pTfhaAXZQwguRYaLnwOe1zswDTUXbH51qNFVPNBICHprOHuqkmIq3OCMF24jGgIvFmHUBWrqAQ8y7UTjRABXm5oQQCcuFBLl1gYjURY2B3bYRc2nAVETnoFkTnCCq3g1jW4D6G7ZjtElm5BS5jOqikGgOdpB/XFq5cpGdOnTGfvGUDAOcd7PG+AxUbO3JB35YPthNB/HLq6xXg5k0Whk5w00zY4K03BDCtQKvpARis9KgTlynUDQN28yErTX1+Cv16726B0yIL6QETLs3NhZozOnBgXxV8Xr7h9Z3PAX7vgsL73PjXngEMkV3UTXTQfwNQGB84RXLU7WP8AG0yThZWT3VIAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" Url="https://carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="427ac644a3fd0a4febc2846c0abfe793.jpg" xmlns="">0iOjttqkkYkebUgbRBwQObQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

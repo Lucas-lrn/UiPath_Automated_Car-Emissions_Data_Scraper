@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zvBOcvZ8WUy5WyUrVS62wQ" Reference="KWpzG9OZQUmLfYql1myVUA/b2esJDfnqECjCnV1PBP1JA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="ab510253-5a6d-4e92-bf98-0784e6676350" DesignTimeRectangle="34, 310, 1609, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='Find new &amp;quot;Zero&amp;quot;, &amp;quot;Low Emissions&amp;quot; and &amp;quot;Ultra-Low Emissions&amp;quot; vehicles' /&gt;" Guid="d6687c2f-2c7e-42df-ac03-47f9dfc2a66d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ab510253-5a6d-4e92-bf98-0784e6676350" DesignTimeRectangle="40, 362, 148, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='                     CO2 Emissions' /&gt;" Guid="ffad9c90-0ab6-4587-84d2-046c90d2c174" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f82cfeaa131b168ddc85e55f413ed17.png" xmlns="">077owlWmMV0-OwdlpZmx5sA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Find new Zero, Low E…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "b2esJDfnqECjCnV1PBP1JA",
+  "Reference": "KWpzG9OZQUmLfYql1myVUA/b2esJDfnqECjCnV1PBP1JA",
+  "ParentRef": "KWpzG9OZQUmLfYql1myVUA/DiIq1MqJwEmoQIjEvbLHlQ",
+  "Created": "2025-07-20T07:01:27.0836848Z",
+  "Updated": "2025-07-20T07:01:27.0836848Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xz0hZYt7C0Goi3AQ5GSHUw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="a32962b7-50b3-4fd4-8eff-e09289b87adf" CvTextArea="1598, 705, 33, 15" CvTextArgument="First" CvType="Text" DesignTimeRectangle="1600, 703, 31, 17" ElementType="Button" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnFirst' tag='INPUT' type='submit' /&gt;" Guid="0556b088-d8f5-40f3-9c12-00a63c38547f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a32962b7-50b3-4fd4-8eff-e09289b87adf" CvTextArea="1634, 704, 63, 16" CvTextArgument="Previous" CvType="Text" DesignTimeRectangle="1636, 703, 60, 17" ElementType="Button" FuzzySelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnPrev' tag='INPUT' type='submit' class='GridNavBtn underline' aaname='Go to previous page' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Previous' /&gt;" Guid="9d8e14d8-377c-4cd9-8a37-440a4f102195" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aad88ffe64378dbc0a0dcd875f353083.png" xmlns="">04ODwkjhrGUyfoHA1IV9a6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

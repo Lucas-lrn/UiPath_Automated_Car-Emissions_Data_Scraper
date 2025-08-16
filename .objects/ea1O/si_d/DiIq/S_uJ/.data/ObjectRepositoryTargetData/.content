@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NME4XQoFkESeq9Ypn1jjAA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="carfueldata.vehicle-certification-agency.gov.uk" CVScreenId="9fc6b730-f1c3-438d-96ab-3e2931d7e0b5" CvTextArea="144, 714, 354, 15" CvTextArgument="Find new Zero, Low and Ultra-Low emission cars" CvType="Text" DesignTimeRectangle="136, 713, 362, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Find new Zero, Low and Ultra-Low emission cars' parentid='Content' tag='A' /&gt;" Guid="9123ef9a-978b-40d3-b601-8694f80803e0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Select a search : Directgov - Car fuel data, CO2 and vehicle tax tools' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9fc6b730-f1c3-438d-96ab-3e2931d7e0b5" CvTextArea="134, 683, 456, 16" CvTextArgument="View new cars with CO2 emissions below 100g/km or 75g/km." CvType="Text" DesignTimeRectangle="136, 679, 1760, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='Content' tag='P' aaname='View new cars with CO2 emissions below 100g/km or 75g/km.' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='View new cars with CO2 emissions below 100g/km or 75g/km.' /&gt;" Guid="152749e8-0207-45a5-9f4f-0696d3c0787f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b40c0b47785f1f7731dbf35578a98f53.png" xmlns="">05XX5l4WM1EKGiAEnjHfRBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

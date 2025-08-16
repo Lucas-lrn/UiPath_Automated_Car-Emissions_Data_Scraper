@@ -1,0 +1,533 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1058.6666666666667,4069.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_23">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Extract data from VCA webpage and create a excel file to Find new &quot;Zero&quot;, &quot;Low Emissions&quot; and &quot;Ultra-Low Emissions&quot; vehicles." sap:VirtualizedContainerService.HintSize="1058.6666666666667,4046.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_22">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="EmissionInput" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_CarInput" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_EmissionZero" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_EmisionLow" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_EmissionUltraLow" />
+        <Variable x:TypeArguments="x:String" Name="FilePath" />
+        <Variable x:TypeArguments="scg:ICollection(x:Object)" Default="[new List(of object)]" Name="cl_EmissionZero" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ft_EmissionUltroLow" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ft_EmissionLow" />
+        <Variable x:TypeArguments="sd:DataTable" Name="ft_EmissionZero" />
+        <Variable x:TypeArguments="x:Int32" Name="count">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Int32" Name="count_UltraLow">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Int32" Name="count_Low">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Scraping DataTable from webpage" AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome CO2 Emissions  Directgov - Find new ca" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1024.6666666666667,3498.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="990.6666666666666,3216.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:List(x:String)" Name="selectItems" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State 'Find new Zero, Low E…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="956.6666666666666,540.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears - VCA Webpage" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Continue the process&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear - Click on main page to navigate to VCA Webpage" sap:VirtualizedContainerService.HintSize="452.6666666666667,247.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Find new Zero, Low and …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418.6666666666667,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk" CVScreenId="9fc6b730-f1c3-438d-96ab-3e2931d7e0b5" ContentHash="NME4XQoFkESeq9Ypn1jjAA" CvTextArea="144, 714, 354, 15" CvTextArgument="Find new Zero, Low and Ultra-Low emission cars" CvType="Text" DesignTimeRectangle="136, 713, 362, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Find new Zero, Low and Ultra-Low emission cars' parentid='Content' tag='A' /&gt;" Guid="9123ef9a-978b-40d3-b601-8694f80803e0" InformativeScreenshot="b40c0b47785f1f7731dbf35578a98f53.png" Reference="KWpzG9OZQUmLfYql1myVUA/S_uJrwoL7EqQvcKLrgvmHA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Select a search : Directgov - Car fuel data, CO2 and vehicle tax tools' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9fc6b730-f1c3-438d-96ab-3e2931d7e0b5" CvTextArea="134, 683, 456, 16" CvTextArgument="View new cars with CO2 emissions below 100g/km or 75g/km." CvType="Text" DesignTimeRectangle="136, 679, 1760, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='Content' tag='P' aaname='View new cars with CO2 emissions below 100g/km or 75g/km.' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='View new cars with CO2 emissions below 100g/km or 75g/km.' /&gt;" Guid="152749e8-0207-45a5-9f4f-0696d3c0787f" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="ab510253-5a6d-4e92-bf98-0784e6676350" ContentHash="zvBOcvZ8WUy5WyUrVS62wQ" DesignTimeRectangle="34, 310, 1609, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='Find new &amp;quot;Zero&amp;quot;, &amp;quot;Low Emissions&amp;quot; and &amp;quot;Ultra-Low Emissions&amp;quot; vehicles' /&gt;" Guid="d6687c2f-2c7e-42df-ac03-47f9dfc2a66d" InformativeScreenshot="6f82cfeaa131b168ddc85e55f413ed17.png" Reference="KWpzG9OZQUmLfYql1myVUA/b2esJDfnqECjCnV1PBP1JA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ab510253-5a6d-4e92-bf98-0784e6676350" DesignTimeRectangle="40, 362, 148, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='                     CO2 Emissions' /&gt;" Guid="ffad9c90-0ab6-4587-84d2-046c90d2c174" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" Attribute="items" DisplayName="Get Attribute '10'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="956.6666666666666,243.33333333333334" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[selectItems]" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                <uix:NGetAttributeGeneric.Target>
+                  <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="ae9568ea-f530-4078-9435-c4ef1b0c36f0" ContentHash="xs_aq7XVvUG1rhiJtu5vFA" DesignTimeRectangle="57, 668, 56, 21" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="5acae43e-c7b6-408c-b452-d4d0d42e365b" InformativeScreenshot="30ae9529d8f94db9f9861386ae9dd54f.png" Reference="KWpzG9OZQUmLfYql1myVUA/_uatfrB2EkmelH4BRXh0xw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NGetAttributeGeneric.Target>
+              </uix:NGetAttributeGeneric>
+              <uix:NSelectItem DisplayName="Select Item '10' - Show first 100 rows" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="956.6666666666666,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[selectItems(9)]" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="10">
+                    <x:String>10</x:String>
+                    <x:String>20</x:String>
+                    <x:String>30</x:String>
+                    <x:String>40</x:String>
+                    <x:String>50</x:String>
+                    <x:String>60</x:String>
+                    <x:String>70</x:String>
+                    <x:String>80</x:String>
+                    <x:String>90</x:String>
+                    <x:String>100</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="ae9568ea-f530-4078-9435-c4ef1b0c36f0" ContentHash="xs_aq7XVvUG1rhiJtu5vFA" DesignTimeRectangle="57, 668, 56, 21" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="5acae43e-c7b6-408c-b452-d4d0d42e365b" InformativeScreenshot="30ae9529d8f94db9f9861386ae9dd54f.png" Reference="KWpzG9OZQUmLfYql1myVUA/_uatfrB2EkmelH4BRXh0xw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_CarInput]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Manufacturer' ReferenceIdx='0' Name='Manufacturer'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Model' ReferenceIdx='1' Name='Model'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description' ReferenceIdx='2' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description Url' ReferenceIdx='3' Name='Description Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fuel type' ReferenceIdx='4' Name='Fuel type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='CO2 g/km&amp;#xA;(Weighted for PHEVs)' ReferenceIdx='5' Name='CO2 g/km (Weighted for PHEVs)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Imperial combined&amp;#xA;fuel consumption' ReferenceIdx='6' Name='Imperial combined fuel consumption'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Manufacturer' attr='fulltext' /&gt;&lt;column name='Model' attr='fulltext' /&gt;&lt;column name='Description' attr='fulltext' name2='Description Url' attr2='href' /&gt;&lt;column name='Fuel type' attr='fulltext' /&gt;&lt;column name='CO2 g/km&amp;#xA;(Weighted for PHEVs)' attr='fulltext' /&gt;&lt;column name='Imperial combined&amp;#xA;fuel consumption' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="956.6666666666666,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="a3991f1d-2380-4ba9-a465-2adad2df0b40" CvTextArea="1814, 636, 34, 15" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1816, 548, 32, 17" DesignTimeScaleFactor="1.2000000476837158" ElementType="Button" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnNextB' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnNextB' tag='INPUT' type='submit' class='GridNavBtn underline' aaname='Go to next page' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next' /&gt;" Guid="bce5580f-1a25-42d6-98df-a474a52f172c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="61eee7e3-0894-41b4-9119-298dc7794972" CvTextArea="1851, 614, 31, 15" CvTextArgument="Last" CvType="Text" DesignTimeRectangle="1854, 548, 29, 17" ElementType="Button" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnLastB' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnLastB' tag='INPUT' type='submit' class='GridNavBtn Last underline' aaname='Go to last page' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Last' /&gt;" Guid="a2890584-600e-4060-8f32-0ad7834d7c06" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" ContentHash="G3vu8cpO-Eq8shqgoLqeQg" DesignTimeRectangle="47, 728, 1836, 3048" DesignTimeScaleFactor="1.2000000476837158" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="bca9a1d2-5507-4ab7-9947-ce4d3b8991a6" InformativeScreenshot="9da8f39d0f66a2bcaf16e78faf274dce.png" Reference="KWpzG9OZQUmLfYql1myVUA/qg2P0sTR-0uh_Bcq2K3UCA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NExtractData>
+              <Assign sap2010:Annotation.AnnotationText="Create a path to save file in C:\temp" DisplayName="Assign - Path" sap:VirtualizedContainerService.HintSize="956.6666666666666,148" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[FilePath]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">["C:\temp\dvaemissions\" + DateTime.Now.ToString("ddMMyy")+ ".xlsx"]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:FilterDataTable DataTable="[dt_CarInput]" DisplayName="Filter Data Table - Ultra Low emission" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="956.6666666666666,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[ft_EmissionUltroLow]" SelectColumnsMode="Keep">
+                <ui:FilterDataTable.Filters>
+                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                    <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+                  </scg:List>
+                </ui:FilterDataTable.Filters>
+                <ui:FilterDataTable.SelectColumns>
+                  <scg:List x:TypeArguments="InArgument" Capacity="8">
+                    <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[3]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[4]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[5]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[6]</InArgument>
+                  </scg:List>
+                </ui:FilterDataTable.SelectColumns>
+              </ui:FilterDataTable>
+              <ui:FilterDataTable DataTable="[dt_CarInput]" DisplayName="Filter Data Table - Low emission" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="956.6666666666666,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[ft_EmissionLow]" SelectColumnsMode="Keep">
+                <ui:FilterDataTable.Filters>
+                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                    <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+                  </scg:List>
+                </ui:FilterDataTable.Filters>
+                <ui:FilterDataTable.SelectColumns>
+                  <scg:List x:TypeArguments="InArgument" Capacity="8">
+                    <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[3]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[4]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[5]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[6]</InArgument>
+                  </scg:List>
+                </ui:FilterDataTable.SelectColumns>
+              </ui:FilterDataTable>
+              <ui:FilterDataTable DataTable="[dt_CarInput]" DisplayName="Filter Data Table - Zero emission" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="956.6666666666666,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[ft_EmissionZero]" SelectColumnsMode="Keep">
+                <ui:FilterDataTable.Filters>
+                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                    <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+                  </scg:List>
+                </ui:FilterDataTable.Filters>
+                <ui:FilterDataTable.SelectColumns>
+                  <scg:List x:TypeArguments="InArgument" Capacity="8">
+                    <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[1]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[3]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[4]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[5]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32">[6]</InArgument>
+                  </scg:List>
+                </ui:FilterDataTable.SelectColumns>
+              </ui:FilterDataTable>
+              <ui:ClearDataTable DataTable="[ft_EmissionUltroLow]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="956.6666666666666,114" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+              <ui:ClearDataTable DataTable="[ft_EmissionLow]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="956.6666666666666,114" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
+              <ui:ClearDataTable DataTable="[ft_EmissionZero]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="956.6666666666666,114" sap2010:WorkflowViewState.IdRef="ClearDataTable_3" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterate through DTs applying conditionals to level of CO2 emissions" DataTable="[dt_CarInput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="956.6666666666666,724" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,509.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Assign - Get CO2 g/km (Weighted for PHEVs) data" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[EmissionInput]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[CInt(CurrentRow("CO2 g/km (Weighted for PHEVs)"))]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If sap2010:Annotation.AnnotationText="ultra low emission cars: 1=&gt;g/co2 per km and &lt;75g/co2 per km" Condition="[EmissionInput &gt;= 1 and EmissionInput &lt; 75 and count_UltraLow &lt; 100]" DisplayName="If - UltraLow" sap:VirtualizedContainerService.HintSize="434,119.33333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,422" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString,CurrentRow(2).ToString, CurrentRow(3).ToString, CurrentRow(4).ToString, CurrentRow(5).ToString, CurrentRow(6).ToString}]" DataTable="[ft_EmissionUltroLow]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+                            <Assign sap2010:Annotation.AnnotationText="Count to retrieve the first 100 data to ultraLow table" DisplayName="Assign - Count" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[count_UltraLow]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[count_UltraLow + 1]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <If sap2010:Annotation.AnnotationText="low emission cars: &lt;100g/co2 AND &gt;=75g/co2 per km" Condition="[EmissionInput &gt;= 74 and count_Low &lt; 100]" DisplayName="If - Low" sap:VirtualizedContainerService.HintSize="434,119.33333333333333" sap2010:WorkflowViewState.IdRef="If_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,422" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString,CurrentRow(2).ToString, CurrentRow(3).ToString, CurrentRow(4).ToString, CurrentRow(5).ToString, CurrentRow(6).ToString}]" DataTable="[ft_EmissionLow]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_7" />
+                            <Assign sap2010:Annotation.AnnotationText="Count to retrieve the first 100 data to Low table" DisplayName="Assign - Count" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_10">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[count_Low]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[count_Low + 1]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <If sap2010:Annotation.AnnotationText="zero emission cars: 0g/co2 per km" Condition="[EmissionInput = 0 and count &lt; 100]" DisplayName="If - Zero" sap:VirtualizedContainerService.HintSize="434,93.33333333333333" sap2010:WorkflowViewState.IdRef="If_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,422" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString,CurrentRow(2).ToString, CurrentRow(3).ToString, CurrentRow(4).ToString, CurrentRow(5).ToString, CurrentRow(6).ToString}]" DataTable="[ft_EmissionZero]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_8" />
+                            <Assign sap2010:Annotation.AnnotationText="Count to retrieve the first 100 data to zero table" DisplayName="Assign - Count" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_8">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[count + 1]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'First'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="956.6666666666666,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="300a6e66-1b6a-485a-9971-69a47f9f9e99" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" CVScreenId="a32962b7-50b3-4fd4-8eff-e09289b87adf" ContentHash="xz0hZYt7C0Goi3AQ5GSHUw" CvTextArea="1598, 705, 33, 15" CvTextArgument="First" CvType="Text" DesignTimeRectangle="1600, 703, 31, 17" ElementType="Button" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnFirst' tag='INPUT' type='submit' /&gt;" Guid="0556b088-d8f5-40f3-9c12-00a63c38547f" InformativeScreenshot="aad88ffe64378dbc0a0dcd875f353083.png" Reference="KWpzG9OZQUmLfYql1myVUA/cRsuTs2AqkmfFfScMYwNNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="a32962b7-50b3-4fd4-8eff-e09289b87adf" CvTextArea="1634, 704, 63, 16" CvTextArgument="Previous" CvType="Text" DesignTimeRectangle="1636, 703, 60, 17" ElementType="Button" FuzzySelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$carResultsGrid1$btnPrev' tag='INPUT' type='submit' class='GridNavBtn underline' aaname='Go to previous page' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Previous' /&gt;" Guid="9d8e14d8-377c-4cd9-8a37-440a4f102195" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="lCUBYROc8k6EUFDbsqlQjQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFvSURBVDhPlZKvb4NQEMebpYqgCIpULUj+gqZ/QmUlakEtyEokmVqqyOQUqWqmlipS9SSZQjZVL6jlKfIU4Za7x48+GEsmLsC7+37ue/dY1E0Nf8XpzGD5sIOlFdDTf0q0/GIs6KJqalgakRIaIT1NK6J309pTfhaAXZQwguRYaLnwOe1zswDTUXbH51qNFVPNBICHprOHuqkmIq3OCMF24jGgIvFmHUBWrqAQ8y7UTjRABXm5oQQCcuFBLl1gYjURY2B3bYRc2nAVETnoFkTnCCq3g1jW4D6G7ZjtElm5BS5jOqikGgOdpB/XFq5cpGdOnTGfvGUDAOcd7PG+AxUbO3JB35YPthNB/HLq6xXg5k0Whk5w00zY4K03BDCtQKvpARis9KgTlynUDQN28yErTX1+Cv16726B0yIL6QETLs3NhZozOnBgXxV8Xr7h9Z3PAX7vgsL73PjXngEMkV3UTXTQfwNQGB84RXLU7WP8AG0yThZWT3VIAAAAAElFTkSuQmCC" InformativeScreenshot="427ac644a3fd0a4febc2846c0abfe793.jpg" Reference="KWpzG9OZQUmLfYql1myVUA/DiIq1MqJwEmoQIjEvbLHlQ" Selector="&lt;html app='chrome.exe' title='CO2 Emissions : Directgov - Find new cars by fuel economy' /&gt;" Url="https://carfueldata.vehicle-certification-agency.gov.uk/search-by-low-emissions.aspx" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[ft_EmissionUltroLow]" DisplayName="Write Range Workbook - UltraLow " sap:VirtualizedContainerService.HintSize="1024.6666666666667,148" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="Ultra Low" WorkbookPath="[FilePath]">
+        <ui:WriteRange.StartingCell>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:WriteRange.StartingCell>
+      </ui:WriteRange>
+      <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[ft_EmissionLow]" DisplayName="Write Range Workbook - Low" sap:VirtualizedContainerService.HintSize="1024.6666666666667,148" sap2010:WorkflowViewState.IdRef="WriteRange_8" SheetName="Low" WorkbookPath="[FilePath]">
+        <ui:WriteRange.StartingCell>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:WriteRange.StartingCell>
+      </ui:WriteRange>
+      <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[ft_EmissionZero]" DisplayName="Write Range Workbook - Zero" sap:VirtualizedContainerService.HintSize="1024.6666666666667,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_9" SheetName="Zero" WorkbookPath="[FilePath]">
+        <ui:WriteRange.StartingCell>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:WriteRange.StartingCell>
+      </ui:WriteRange>
+    </Sequence>
+  </Sequence>
+</Activity>
